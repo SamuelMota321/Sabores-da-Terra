@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Sabores da Terra: Culinária Vegana para o Dia a Dia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('./assets/banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header & Hero Section -->
+    <header class="hero-bg text-white shadow-lg">
+        <div class="bg-black bg-opacity-50">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 15a6 6 0 0 0 6-6h-6V3a6 6 0 0 0-6 6c0 3.314 2.686 6 6 6z"/></svg>
+                    <span class="text-xl font-bold">Sabores da Terra</span>
+                </div>
+                 <a href="#inscricao" class="hidden md:block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Inscreva-se Agora</a>
+            </nav>
+
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Descubra os Segredos da Culinária Vegana</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Um workshop prático e delicioso para transformar a sua relação com a comida, sem abrir mão do sabor.</p>
+                <div class="bg-white text-stone-800 rounded-lg p-4 max-w-2xl mx-auto mb-8 shadow-xl inline-flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                    <div class="flex items-center"><i data-lucide="calendar" class="w-5 h-5 mr-2 text-green-600"></i><span class="font-semibold">Sábado, 25 de Outubro de 2025</span></div>
+                    <div class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-2 text-green-600"></i><span class="font-semibold">Cozinha Semente - São Paulo, SP</span></div>
+                </div>
+                <div>
+                     <a href="#inscricao" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Quero Garantir Minha Vaga</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- O que você vai aprender -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que você vai aprender?</h2>
+                <p class="max-w-3xl mx-auto mb-12 text-stone-600">Desde técnicas básicas a pratos surpreendentes para o dia a dia e ocasiões especiais.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-stone-50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <i data-lucide="carrot" class="w-12 h-12 mx-auto text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Bases da Cozinha Plant-Based</h3>
+                        <p class="text-stone-600">Como substituir ingredientes de origem animal, criar leites vegetais e queijos cremosos.</p>
+                    </div>
+                    <div class="bg-stone-50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <i data-lucide="soup" class="w-12 h-12 mx-auto text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Refeições Práticas e Saborosas</h3>
+                        <p class="text-stone-600">Aprenda a fazer pratos completos, nutritivos e rápidos para a sua rotina semanal.</p>
+                    </div>
+                    <div class="bg-stone-50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                       <i data-lucide="cake-slice" class="w-12 h-12 mx-auto text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Sobremesas Veganas Incríveis</h3>
+                        <p class="text-stone-600">Descubra como fazer doces deliciosos, como brownies e mousses, sem usar ovos ou laticínios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre a Chef -->
+        <section class="py-16 md:py-24 bg-stone-100">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="./assets/helena.jpg" alt="Foto da Chef Helena Reis" class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-full md:h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Conheça a Chef Helena Reis</h2>
+                        <p class="text-stone-600 mb-4">Apaixonada pela riqueza dos ingredientes vegetais, a Chef Helena Reis dedicou os últimos 10 anos a explorar e aprimorar a culinária plant-based. Com especializações em gastronomia funcional e passagem por cozinhas renomadas, ela acredita que a comida vegana pode e deve ser vibrante, criativa e acessível a todos.</p>
+                        <p class="text-stone-600">"Minha missão é mostrar que é possível comer de forma consciente e saudável, sem nunca abrir mão do prazer à mesa. Quero partilhar os meus segredos com você!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Pratos -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-12">Pratos que você vai dominar</h2>
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x400/228B22/FFFFFF?text=Curry+de+Grão-de-bico" alt="Curry de Grão-de-bico" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x400/8B4513/FFFFFF?text=Hambúrguer+de+Lentilha" alt="Hambúrguer de Lentilha" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x400/D2691E/FFFFFF?text=Mousse+de+Chocolate" alt="Mousse de Chocolate com Abacate" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                     <div class="overflow-hidden rounded-lg shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="https://placehold.co/400x400/DAA520/FFFFFF?text=Queijo+de+Castanha" alt="Queijo cremoso de castanha de caju" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="py-16 md:py-24 bg-green-700 text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">O que dizem nossos alunos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white text-stone-800 p-6 rounded-lg shadow-lg">
+                        <p class="mb-4">"O melhor workshop que já fiz! A Chef Helena é super didática e as receitas são maravilhosas. Saí de lá inspirada e cheia de ideias para aplicar no meu dia a dia. Recomendo muito!"</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/cccccc/FFFFFF?text=A" class="w-12 h-12 rounded-full mr-4" alt="Foto de Ana Silva">
+                            <div>
+                                <p class="font-bold">Ana Silva</p>
+                                <p class="text-sm text-stone-500">Aluna da turma de Abril</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white text-stone-800 p-6 rounded-lg shadow-lg">
+                        <p class="mb-4">"Eu não tinha nenhuma experiência com culinária vegana e fiquei surpreso com a quantidade de sabor que conseguimos criar. O ambiente foi super acolhedor e divertido. Valeu cada centavo."</p>
+                         <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/cccccc/FFFFFF?text=P" class="w-12 h-12 rounded-full mr-4" alt="Foto de Pedro Costa">
+                            <div>
+                                <p class="font-bold">Pedro Costa</p>
+                                <p class="text-sm text-stone-500">Aluno da turma de Abril</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Inscrição -->
+        <section id="inscricao" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-lg shadow-2xl p-8 md:p-12 max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Vagas Limitadas!</h2>
+                    <p class="text-stone-600 mb-6">Para garantir uma experiência de alta qualidade e atenção individual, nosso workshop é limitado a apenas 15 participantes.</p>
+                    
+                    <div id="countdown" class="text-2xl md:text-3xl font-bold text-green-700 mb-8 flex justify-center space-x-4">
+                        <div><span id="days"></span><div class="text-sm font-normal">Dias</div></div>
+                        <div><span id="hours"></span><div class="text-sm font-normal">Horas</div></div>
+                        <div><span id="minutes"></span><div class="text-sm font-normal">Minutos</div></div>
+                        <div><span id="seconds"></span><div class="text-sm font-normal">Segundos</div></div>
+                    </div>
+                    
+                    <div class="border-t border-b border-stone-200 py-8 mb-8">
+                        <h3 class="text-2xl font-bold">Investimento</h3>
+                        <p class="text-4xl font-bold text-green-600 my-2">R$ 249,00</p>
+                        <p class="text-stone-600">ou em até 3x de R$ 83,00 sem juros</p>
+                    </div>
+
+                    <div class="text-left mb-8">
+                        <h4 class="text-xl font-bold mb-4">O que está incluído:</h4>
+                        <ul class="space-y-2 text-stone-600">
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-1"></i><span>4 horas de aula prática e intensiva.</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-1"></i><span>Todos os ingredientes (orgânicos e selecionados).</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-1"></i><span>Apostila digital com todas as receitas e dicas.</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-1"></i><span>Avental exclusivo do workshop.</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 text-green-600 flex-shrink-0 mt-1"></i><span>Certificado de participação.</span></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105 inline-block">INSCREVA-SE E TRANSFORME SUA COZINHA</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="py-16 md:py-24 bg-stone-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+                <div class="space-y-4">
+                    <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                        <summary class="font-semibold text-lg">Preciso ter alguma experiência na cozinha?</summary>
+                        <p class="text-stone-600 mt-2">Não! O workshop foi desenhado tanto para iniciantes que nunca cozinharam quanto para aqueles que já têm alguma experiência e querem aprimorar suas técnicas na culinária vegana.</p>
+                    </details>
+                     <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                        <summary class="font-semibold text-lg">Preciso levar algum material ou ingrediente?</summary>
+                        <p class="text-stone-600 mt-2">Absolutamente nada. Todos os ingredientes, utensílios e até mesmo o seu avental serão fornecidos por nós. A sua única tarefa é vir com vontade de aprender e se divertir.</p>
+                    </details>
+                     <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                        <summary class="font-semibold text-lg">Tenho restrições alimentares (glúten, oleaginosas). Posso participar?</summary>
+                        <p class="text-stone-600 mt-2">Por favor, entre em contato conosco antes de realizar a inscrição para que possamos verificar a possibilidade de adaptação das receitas. Fazemos o nosso melhor para acomodar a todos!</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-stone-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+             <div class="flex items-center justify-center space-x-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 15a6 6 0 0 0 6-6h-6V3a6 6 0 0 0-6 6c0 3.314 2.686 6 6 6z"/></svg>
+                <span class="text-xl font-bold text-white">Sabores da Terra</span>
+            </div>
+            <p class="mb-4">Transformando vidas através da comida de verdade.</p>
+            <p class="text-sm">&copy; 2025 Sabores da Terra. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        lucide.createIcons();
+
+        // Countdown Timer Logic
+        const countdownDate = new Date("October 25, 2025 14:00:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "INSCRIÇÕES ENCERRADAS";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
